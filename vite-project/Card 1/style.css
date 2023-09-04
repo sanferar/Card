@@ -1,0 +1,219 @@
+body, html{
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0px;
+}
+
+h2{
+  font-family: 'Open Sans', sans-serif;
+}
+
+p{
+ font-family: 'Rubik', sans-serif ;
+}
+
+.info__ley{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+#app{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 34px;
+  margin: 1rem;
+}
+
+.contenedor__historial {
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 10px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  max-width: 500px;
+  position: relative;
+}
+
+.contenedor__historial__collapse{
+  background-color: rgb(241, 241, 241);
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+
+#cerrar>p{
+  cursor: pointer;
+  color: rgb(27, 27, 27);
+  width: 100%;
+}
+
+.contenedor__historial__collapse--opacity{
+  background-color: rgb(241, 241, 241);
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.35s ease;
+
+}
+
+.contenedor__historial__collapse>p{
+  color: rgb(32, 32, 32);
+  margin: 30px;
+}
+
+.contenedor__historial__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.contenedor__historial__head__tooltyp {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+}
+
+.contenedor__historial__respuestas {
+  border-top: 1px rgb(181, 181, 181) solid;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.contenedor__historial__respuestas__user__respuesta{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.contenedor__historial__respuestas__user__correcta{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.user__respuesta{
+  background-color: rgba(0, 179, 24, 0.605);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.user__correcta{
+  background-color: rgba(255, 39, 39, 0.541);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+@media (max-width:500px) {
+
+  .contenedor__historial {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 10px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    max-width: 500px;
+  }
+  
+  .contenedor__historial__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+
+  
+  .contenedor__historial__head__tooltyp {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  }
+  
+  
+  .contenedor__historial__respuestas {
+    border-top: 1px rgb(181, 181, 181) solid;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+  }
+  
+  
+  .contenedor__historial__respuestas__user__respuesta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+  }
+  
+  .contenedor__historial__respuestas__user__correcta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+  }
+  
+  .user__respuesta{
+    background-color: rgba(0, 179, 24, 0.605);
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .user__correcta{
+    background-color: rgba(255, 39, 39, 0.541);
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  
+}
